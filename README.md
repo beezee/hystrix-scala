@@ -24,3 +24,5 @@ res3: Option[Int] = None
 val iamweird = { () => 1 }.liftHx(t)
 //iamweird: Option[Int] = Some(1)
 ```
+
+Shoutout to @rboccuzzi for working through these ideas with me
