@@ -12,10 +12,8 @@ object hx {
       hxi.mHx(gk)(fn)
   }
 
-  implicit class GKLift[M[_], A](gk: HystrixCommandGroupKey)(
-                        implicit hxi: HxInterface[M]) {
-
-    def run[A](fn: () => A): M[A] =
+  implicit class GKLift[A](gk: HystrixCommandGroupKey){
+    def run[M[_]](fn: () => A)(implicit hxi: HxInterface[M]): M[A] =
       hxi.mHx(gk)(fn)
   }
 }
