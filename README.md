@@ -1,4 +1,4 @@
-##hystrix-toOption
+##hystrix-scala
 
 I'm sure it's missing plenty of stuff, I only looked at the hello world.
 
