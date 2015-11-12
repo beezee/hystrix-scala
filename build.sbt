@@ -8,3 +8,9 @@ libraryDependencies ++= Seq(
   "com.netflix.hystrix" % "hystrix-core" % "1.2.16",
   "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 )
+
+initialCommands in console := """
+  import bz._
+  import bz.syntax.hx._
+  import com.netflix.hystrix.HystrixCommandGroupKey
+"""

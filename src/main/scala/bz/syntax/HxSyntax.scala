@@ -5,15 +5,17 @@ import com.netflix.hystrix.HystrixCommandGroupKey
 
 object hx {
 
-  implicit class HxLift[A](fn: () => A) {
+  implicit class HxLift[M[_], A](fn: () => A)(
+                                implicit hxi: HxInterface[M]) {
 
-    def liftHx(gk: HystrixCommandGroupKey): Option[A] =
-      HxInterface.mHx(gk)(fn)
+    def liftHx(gk: HystrixCommandGroupKey): M[A] =
+      hxi.mHx(gk)(fn)
   }
 
-  implicit class GKLift(gk: HystrixCommandGroupKey) {
+  implicit class GKLift[M[_], A](gk: HystrixCommandGroupKey)(
+                        implicit hxi: HxInterface[M]) {
 
-    def toOption[A](fn: () => A): Option[A] =
-      HxInterface.mHx(gk)(fn)
+    def run[A](fn: () => A): M[A] =
+      hxi.mHx(gk)(fn)
   }
 }
