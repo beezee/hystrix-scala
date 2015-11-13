@@ -1,8 +1,9 @@
 package bz
 
 import HxShortCircuit._
-import com.netflix.hystrix.HystrixCommand
-import com.netflix.hystrix.HystrixCommandGroupKey
+import com.netflix.hystrix.{HystrixCommand, HystrixCommandGroupKey}
+import com.netflix.hystrix.HystrixCommandKey
+import com.netflix.hystrix.HystrixCommand.Setter
 import scalaz.\/
 import scalaz.Unapply
 import scalaz.syntax.either._
@@ -14,21 +15,21 @@ object HxShortCircuit {
 
 trait HxInterface[M[_]] {
 
-  def hxC[A](k: HystrixCommandGroupKey)(
+  def hxC[A](s: Setter)(
                       fn: () => A): HystrixCommand[M[A]]
 
-  def mHx[A](k: HystrixCommandGroupKey)(
+  def mHx[A](s: Setter)(
                       fn: () => A): M[A] =
-    hxC(k)(fn).execute()
+    hxC(s)(fn).execute()
 }
 
 object HxInterfaces {
 
   implicit val optionHx = new HxInterface[Option] {
 
-    def hxC[A](k: HystrixCommandGroupKey)(
+    def hxC[A](s: Setter)(
                         fn: () => A): HystrixCommand[Option[A]] =
-      new HystrixCommand[Option[A]](k) {
+      new HystrixCommand[Option[A]](s) {
         override def run(): Option[A] = Some(fn())
         override def getFallback(): Option[A] = None
       }
@@ -37,9 +38,9 @@ object HxInterfaces {
   type THD[A] = \/[Throwable, A]
   implicit val djHx = new HxInterface[THD] {
 
-      def hxC[A](k: HystrixCommandGroupKey)(
+      def hxC[A](s: Setter)(
                           fn: () => A): HystrixCommand[THD[A]] =
-        new HystrixCommand[\/[Throwable, A]](k) {
+        new HystrixCommand[\/[Throwable, A]](s) {
           override def run(): \/[Throwable, A] =
             fn().right[Throwable]
           override def getFallback(): \/[Throwable, A] =
@@ -59,9 +60,9 @@ object HxControl {
     extends HxResult[A]
   case class HxOk[A](get: A) extends HxResult[A]
 
-  def controlInterface[A](k: HystrixCommandGroupKey)(
+  def controlInterface[A](s: Setter)(
                    fn: () => HxResult[A]): HxResult[A] =
-    new HystrixCommand[HxResult[A]](k) {
+    new HystrixCommand[HxResult[A]](s) {
       @volatile private var res: HxResult[A] = null
 
       override def run(): HxResult[A] = {
@@ -91,4 +92,15 @@ object HxControl {
           }
         }.getOrElse(HxFail(th = Some(new HxShortCircuit)))
     }.execute()
+}
+
+object HX {
+
+  def command(k: String): Setter =
+    Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(k))
+          .andCommandKey(HystrixCommandKey.Factory.asKey(k))
+
+  def command(g: String, c: String): Setter =
+    Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(g))
+          .andCommandKey(HystrixCommandKey.Factory.asKey(c))
 }
