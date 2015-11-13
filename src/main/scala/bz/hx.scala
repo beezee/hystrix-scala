@@ -16,13 +16,16 @@ trait HxInterface[M[_]] {
     hxC(s)(fn).execute()
 }
 
-abstract class HxCommand[A](s: Setter) extends HystrixCommand[A](s) {
+object HxThrowables {
   sealed trait HxThrowable
   class HxShortCircuit(m: String) extends Throwable(m) with HxThrowable
   class HxMaxedOut(m: String) extends Throwable(m) with HxThrowable
   class HxTimedOut(m: String) extends Throwable(m) with HxThrowable
   class HxMaxedOutTimedOut(m: String) extends Throwable(m) with HxThrowable
+}
 
+abstract class HxCommand[A](s: Setter) extends HystrixCommand[A](s) {
+  import HxThrowables._
 
   def getThr: Throwable =
     (isResponseShortCircuited, isResponseRejected,
