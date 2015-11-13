@@ -1,29 +1,32 @@
 ##hystrix-scala
 
-I'm sure it's missing plenty of stuff, I only looked at the hello world.
-
-Just had an itch.
-
-If you wanna use it, you can do this:
+Provides a small functional interface to Hystrix.
 
 ```scala
-import com.netflix.hystrix.HystrixCommandGroupKey
+import bz.HX
 import bz.syntax.hx._
 import bz.HxInterfaces._
 
-val t = HystrixCommandGroupKey.Factory.asKey("ExampleGroup")
-//t: com.netflix.hystrix.HystrixCommandGroupKey = com.netflix.hystrix.HystrixCommandGroupKey$Factory$HystrixCommandGroupDefault@7b19f87b
+val s = HX.command("Example")
+//s: com.netflix.hystrix.HystrixCommand.Setter = com.netflix.hystrix.HystrixCommand$Setter@7f414b69
 
-val x = t.run { () => 1 }.map(_ + 2)
-//x: Option[Int] = Some(3)
+val x = s.run[THD] { () => 1 }
+//x: bz.HxInterfaces.THD[Int] = \/-(1)
 
-val y = t.toOption { () => throw new Exception("foobard"); 3 }.map(_ + 2)
-res3: Option[Int] = None
+val y = s.run[THD] { () => throw new Exception("fail"); 1 }
+//y: bz.HxInterfaces.THD[Int] = -\/(java.lang.Exception: fail)
 
-// or the other way around, in case you're weird
+val a = s.run[Option] { () = 1 }
+//a: Option[Int] = Some(1)
 
-val iamweird = { () => 1 }.liftHx(t)
-//iamweird: Option[Int] = Some(1)
+val b = s.run[Option] { () => throw new Exception("fail"); 1 }
+//b: Option[Int] = None
 ```
+
+See src/main/scala/bz/hx.scala for Throwable types that represent
+Hystrix specific conditions (at capacity, timeout, circuit open), as
+well as a variant on the above that lets you control whether to count
+operation as a failure via Hystrix within your provided function, while
+retaining partial success.
 
 Shoutout to @rboccuzzi for working through these ideas with me
