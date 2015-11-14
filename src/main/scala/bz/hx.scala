@@ -77,7 +77,7 @@ abstract class HxCommand[A](s: Setter) extends HystrixCommand[A](s) {
 object HxInterfaces {
 
   /**
-   * [[Option]] instance of HxInterface.
+   * Option instance of HxInterface.
    * Returns Some(A) on success and None on failure.
    */
   implicit val optionHx = new HxInterface[Option] {
@@ -91,7 +91,7 @@ object HxInterfaces {
   }
 
   /**
-   * [[scalaz.\/]] with [[Throwable]] on the left
+   * \/ with Throwable on the left
    */
   type THD[A] = \/[Throwable, A]
 
@@ -192,7 +192,7 @@ object HX {
 
   /**
    * Returns HystrixCommand.Setter with
-   * GroupKey and CommandKey both set to provided [[String]] k
+   * GroupKey and CommandKey both set to provided String k
    */
   def command(k: String): Setter =
     Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(k))
@@ -200,8 +200,8 @@ object HX {
 
   /**
    * Returns HystrixCommand.Setter with
-   * GroupKey set to [[String]] g and
-   * CommandKey set to [[String]] c
+   * GroupKey set to String g and
+   * CommandKey set to String c
    */
   def command(g: String, c: String): Setter =
     Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(g))
