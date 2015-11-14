@@ -1,0 +1,236 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>bz - bz</title>
+          <meta name="description" content="bz - bz" />
+          <meta name="keywords" content="bz bz" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../index.html';
+            var hash = 'bz.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../lib/package_big.png" />
+        
+        <h1>bz</h1><span class="permalink">
+      <a href="../index.html#bz.package" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bz</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="bz.HxCommand" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="HxCommand[A]extendsHystrixCommand[A]"></a>
+      <a id="HxCommand[A]:HxCommand[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HxCommand.html"><span class="name">HxCommand</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="com.netflix.hystrix.HystrixCommand">HystrixCommand</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.package@HxCommand[A]extendsHystrixCommand[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Base class for instances of HxInterface typeclass
+extending HystrixCommand.</p><div class="fullcomment"><div class="comment cmt"><p>Base class for instances of HxInterface typeclass
+extending HystrixCommand.</p><p>Provides access to correct type of Throwable in
+case of failure
+</p></div></div>
+    </li><li name="bz.HxInterface" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="HxInterface[M[_]]extendsAnyRef"></a>
+      <a id="HxInterface[M[_]]:HxInterface[M]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HxInterface.html"><span class="name">HxInterface</span></a><span class="tparams">[<span name="M">M<span class="tparams">[<span name="_">_</span>]</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.package@HxInterface[M[_]]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Typeclass for HxInterface.</p><div class="fullcomment"><div class="comment cmt"><p>Typeclass for HxInterface.
+Must implement hxC which creates an HxCommand
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="bz.HX" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HX"></a>
+      <a id="HX:HX"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HX$.html"><span class="name">HX</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.package@HX" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Constructors for HystrixCommand.Setter
+</p>
+    </li><li name="bz.HxControl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HxControl"></a>
+      <a id="HxControl:HxControl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HxControl$.html"><span class="name">HxControl</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.package@HxControl" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Quasi HxInterface that supports context aware user code.</p><div class="fullcomment"><div class="comment cmt"><p>Quasi HxInterface that supports context aware user code.</p><p>Useful when you may want to return a partial success but
+maintain control of whether Hystrix considers excution
+success or failure.
+</p></div></div>
+    </li><li name="bz.HxInterfaces" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HxInterfaces"></a>
+      <a id="HxInterfaces:HxInterfaces"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HxInterfaces$.html"><span class="name">HxInterfaces</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.package@HxInterfaces" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implicit instances of HxInterface typeclass
+</p>
+    </li><li name="bz.HxThrowables" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HxThrowables"></a>
+      <a id="HxThrowables:HxThrowables"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HxThrowables$.html"><span class="name">HxThrowables</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.package@HxThrowables" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Throwable types representing various
+Hystrix specific failure states
+</p>
+    </li><li name="bz.syntax" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="syntax"></a>
+      <a id="syntax:syntax"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="syntax/package.html"><span class="name">syntax</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.package@syntax" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
