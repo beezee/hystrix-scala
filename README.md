@@ -29,4 +29,6 @@ well as a variant on the above that lets you control whether to count
 operation as a failure via Hystrix within your provided function, while
 retaining partial success.
 
+API docs are [here](http://beezee.github.io/hystrix-scala/#package)
+
 Shoutout to @rboccuzzi for working through these ideas with me
