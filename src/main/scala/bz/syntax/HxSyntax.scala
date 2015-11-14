@@ -33,6 +33,14 @@ object hx {
   implicit class GKLift[A](s: Setter){
 
     /**
+     * Lift a Setter into a HystrixCommand with
+     * run method of r and getFallback method of fb
+     * and execute
+     */
+    def run[A](r: () => A, fb: () => A): A =
+      HX.instance(r, fb)(s)
+
+    /**
      * Lift a Setter into a HystrixCommand and
      * execute using the given () => A
      */

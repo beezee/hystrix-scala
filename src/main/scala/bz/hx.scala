@@ -205,4 +205,11 @@ object HX {
   def command(g: String, c: String): Setter =
     Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(g))
           .andCommandKey(HystrixCommandKey.Factory.asKey(c))
+
+
+  def instance[A](fn: () => A, fb: () => A)(s: Setter): A =
+    new HxCommand[A](s) {
+      override def run(): A = fn()
+      override def getFallback(): A = fb()
+    }.execute()
 }
