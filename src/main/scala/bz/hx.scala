@@ -4,7 +4,6 @@ import com.netflix.hystrix.{HystrixCommand, HystrixCommandGroupKey}
 import com.netflix.hystrix.HystrixCommandKey
 import com.netflix.hystrix.HystrixCommand.Setter
 import scalaz.\/
-import scalaz.Unapply
 import scalaz.syntax.either._
 import scalaz.syntax.std.boolean._
 

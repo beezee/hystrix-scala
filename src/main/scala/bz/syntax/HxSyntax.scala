@@ -1,8 +1,10 @@
 package bz.syntax
 
+import bz.HX
 import bz.HxControl._
 import bz.HxInterface
 import com.netflix.hystrix.HystrixCommand.Setter
+import com.netflix.hystrix.HystrixCommandProperties.{Setter => CSetter}
 import scalaz.\/
 
 /**
@@ -36,6 +38,13 @@ object hx {
      */
     def run[M[_]](fn: () => A)(implicit hxi: HxInterface[M]): M[A] =
       hxi.mHx(s)(fn)
+
+    /**
+     * Returns original Setter with added command properties,
+     * as configured by the provided fn
+     */
+    def config(fn: CSetter => CSetter): Setter =
+      s.andCommandPropertiesDefaults(fn(CSetter()))
   }
 
   /**
