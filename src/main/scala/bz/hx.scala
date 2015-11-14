@@ -207,6 +207,11 @@ object HX {
           .andCommandKey(HystrixCommandKey.Factory.asKey(c))
 
 
+  /**
+   * Creates a new HxCommand with the given fn and fn as
+   * run and getFallback functions, and the given
+   * HystrixCommand.Setter s, and executes it
+   */
   def instance[A](fn: () => A, fb: () => A)(s: Setter): A =
     new HxCommand[A](s) {
       override def run(): A = fn()
