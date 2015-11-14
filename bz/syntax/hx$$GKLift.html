@@ -206,6 +206,25 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="bz.syntax.hx.GKLift#config" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="config(fn:com.netflix.hystrix.HystrixCommandProperties.Setter=&gt;com.netflix.hystrix.HystrixCommandProperties.Setter):com.netflix.hystrix.HystrixCommand.Setter"></a>
+      <a id="config((Setter)⇒Setter):Setter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">config</span><span class="params">(<span name="fn">fn: (<span class="extype" name="com.netflix.hystrix.HystrixCommandProperties.Setter">Setter</span>) ⇒ <span class="extype" name="com.netflix.hystrix.HystrixCommandProperties.Setter">Setter</span></span>)</span><span class="result">: <span class="extype" name="com.netflix.hystrix.HystrixCommand.Setter">Setter</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#bz.syntax.hx$$GKLift@config(fn:com.netflix.hystrix.HystrixCommandProperties.Setter=&gt;com.netflix.hystrix.HystrixCommandProperties.Setter):com.netflix.hystrix.HystrixCommand.Setter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns original Setter with added command properties,
+as configured by the provided fn
+</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -383,6 +402,26 @@
     </span>
       <p class="shortcomment cmt">Lift a Setter into a HystrixCommand and
 execute using the given () =&gt; A
+</p>
+    </li><li name="bz.syntax.hx.GKLift#run" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="run[A](r:()=&gt;A,fb:()=&gt;A):A"></a>
+      <a id="run[A](()⇒A,()⇒A):A"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="r">r: () ⇒ <span class="extype" name="bz.syntax.hx.GKLift.run.A">A</span></span>, <span name="fb">fb: () ⇒ <span class="extype" name="bz.syntax.hx.GKLift.run.A">A</span></span>)</span><span class="result">: <span class="extype" name="bz.syntax.hx.GKLift.run.A">A</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#bz.syntax.hx$$GKLift@run[A](r:()=&gt;A,fb:()=&gt;A):A" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Lift a Setter into a HystrixCommand with
+run method of r and getFallback method of fb
+and execute
 </p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
