@@ -67,4 +67,24 @@ object hx {
     def runC[A](fn: () => HxResult[A]): HxResult[A] =
       controlInterface(s)(fn)
   }
+
+  /**
+   * Implicit class decorating a HystrixCommandProperties.Setter
+   */
+  implicit class CSetterLift(s: CSetter){
+    import com.netflix.hystrix.HystrixCommandProperties
+    import HystrixCommandProperties.ExecutionIsolationStrategy._
+
+    /**
+     * Use the Semaphore strategy for this Setter
+     */
+     def usingSemaphore(): CSetter =
+      s.withExecutionIsolationStrategy(SEMAPHORE)
+
+    /**
+     * Use the Thread strategy for this Setter
+     */
+     def usingThreads(): CSetter =
+      s.withExecutionIsolationStrategy(THREAD)
+   }
 }
