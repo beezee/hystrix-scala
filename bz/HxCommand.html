@@ -54,7 +54,7 @@ extending HystrixCommand.</p><p>Provides access to correct type of Throwable in
 case of failure
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="com.netflix.hystrix.HystrixCommand">HystrixCommand</span>[<span class="extype" name="bz.HxCommand.A">A</span>], <span class="extype" name="com.netflix.hystrix.HystrixExecutable">HystrixExecutable</span>[<span class="extype" name="bz.HxCommand.A">A</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="com.netflix.hystrix.HystrixCommand">HystrixCommand</span>[<span class="extype" name="bz.HxCommand.A">A</span>], <span class="extype" name="com.netflix.hystrix.HystrixExecutable">HystrixExecutable</span>[<span class="extype" name="bz.HxCommand.A">A</span>], <span class="extype" name="com.netflix.hystrix.AbstractCommand">AbstractCommand</span>[<span class="extype" name="bz.HxCommand.A">A</span>], <span class="extype" name="com.netflix.hystrix.HystrixObservable">HystrixObservable</span>[<span class="extype" name="bz.HxCommand.A">A</span>], <span class="extype" name="com.netflix.hystrix.HystrixInvokable">HystrixInvokable</span>[<span class="extype" name="bz.HxCommand.A">A</span>], <span class="extype" name="com.netflix.hystrix.HystrixInvokableInfo">HystrixInvokableInfo</span>[<span class="extype" name="bz.HxCommand.A">A</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -72,7 +72,7 @@ case of failure
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="bz.HxCommand"><span>HxCommand</span></li><li class="in" name="com.netflix.hystrix.HystrixCommand"><span>HystrixCommand</span></li><li class="in" name="com.netflix.hystrix.HystrixExecutable"><span>HystrixExecutable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="bz.HxCommand"><span>HxCommand</span></li><li class="in" name="com.netflix.hystrix.HystrixCommand"><span>HystrixCommand</span></li><li class="in" name="com.netflix.hystrix.HystrixExecutable"><span>HystrixExecutable</span></li><li class="in" name="com.netflix.hystrix.AbstractCommand"><span>AbstractCommand</span></li><li class="in" name="com.netflix.hystrix.HystrixObservable"><span>HystrixObservable</span></li><li class="in" name="com.netflix.hystrix.HystrixInvokable"><span>HystrixInvokable</span></li><li class="in" name="com.netflix.hystrix.HystrixInvokableInfo"><span>HystrixInvokableInfo</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -234,6 +234,23 @@ case of failure
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="com.netflix.hystrix.AbstractCommand#decomposeException" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decomposeException(x$1:Exception):RuntimeException"></a>
+      <a id="decomposeException(Exception):RuntimeException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">decomposeException</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.Exception">Exception</span></span>)</span><span class="result">: <span class="extype" name="java.lang.RuntimeException">RuntimeException</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.HxCommand@decomposeException(x$1:Exception):RuntimeException" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -308,7 +325,7 @@ case of failure
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getCacheKey" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.netflix.hystrix.AbstractCommand#getCacheKey" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getCacheKey():String"></a>
       <a id="getCacheKey():String"></a>
       <h4 class="signature">
@@ -324,7 +341,7 @@ case of failure
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -342,91 +359,57 @@ case of failure
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getCommandGroup" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getCommandGroup():com.netflix.hystrix.HystrixCommandGroupKey"></a>
-      <a id="getCommandGroup():HystrixCommandGroupKey"></a>
+    </li><li name="com.netflix.hystrix.AbstractCommand#getExceptionFromThrowable" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getExceptionFromThrowable(x$1:Throwable):Exception"></a>
+      <a id="getExceptionFromThrowable(Throwable):Exception"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getCommandGroup</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.HystrixCommandGroupKey">HystrixCommandGroupKey</span></span>
+        <span class="name">getExceptionFromThrowable</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Exception">Exception</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@getCommandGroup():com.netflix.hystrix.HystrixCommandGroupKey" title="Permalink" target="_top">
+      <a href="../index.html#bz.HxCommand@getExceptionFromThrowable(x$1:Throwable):Exception" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getCommandKey" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getCommandKey():com.netflix.hystrix.HystrixCommandKey"></a>
-      <a id="getCommandKey():HystrixCommandKey"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
+    </li><li name="com.netflix.hystrix.HystrixCommand#getExecutionObservable" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getExecutionObservable():rx.Observable[R]"></a>
+      <a id="getExecutionObservable():Observable[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getExecutionObservable</span><span class="params">()</span><span class="result">: <span class="extype" name="rx.Observable">Observable</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.HxCommand@getExecutionObservable():rx.Observable[R]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>HystrixCommand → AbstractCommand</dd></dl></div>
+    </li><li name="com.netflix.hystrix.AbstractCommand#getExecutionSemaphore" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getExecutionSemaphore():com.netflix.hystrix.AbstractCommand.TryableSemaphore"></a>
+      <a id="getExecutionSemaphore():TryableSemaphore"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getCommandKey</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.HystrixCommandKey">HystrixCommandKey</span></span>
+        <span class="name">getExecutionSemaphore</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.AbstractCommand.TryableSemaphore">TryableSemaphore</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@getCommandKey():com.netflix.hystrix.HystrixCommandKey" title="Permalink" target="_top">
+      <a href="../index.html#bz.HxCommand@getExecutionSemaphore():com.netflix.hystrix.AbstractCommand.TryableSemaphore" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getExecutionEvents" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getExecutionEvents():java.util.List[com.netflix.hystrix.HystrixEventType]"></a>
-      <a id="getExecutionEvents():List[HystrixEventType]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getExecutionEvents</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.List">List</span>[<span class="extype" name="com.netflix.hystrix.HystrixEventType">HystrixEventType</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@getExecutionEvents():java.util.List[com.netflix.hystrix.HystrixEventType]" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getExecutionTimeInMilliseconds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getExecutionTimeInMilliseconds():Int"></a>
-      <a id="getExecutionTimeInMilliseconds():Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getExecutionTimeInMilliseconds</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@getExecutionTimeInMilliseconds():Int" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getFailedExecutionException" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getFailedExecutionException():Throwable"></a>
-      <a id="getFailedExecutionException():Throwable"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getFailedExecutionException</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Throwable">Throwable</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@getFailedExecutionException():Throwable" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
     </li><li name="com.netflix.hystrix.HystrixCommand#getFallback" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getFallback():R"></a>
       <a id="getFallback():A"></a>
@@ -444,40 +427,74 @@ case of failure
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getMetrics" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getMetrics():com.netflix.hystrix.HystrixCommandMetrics"></a>
-      <a id="getMetrics():HystrixCommandMetrics"></a>
+    </li><li name="com.netflix.hystrix.HystrixCommand#getFallbackMethodName" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getFallbackMethodName():String"></a>
+      <a id="getFallbackMethodName():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getMetrics</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.HystrixCommandMetrics">HystrixCommandMetrics</span></span>
+        <span class="name">getFallbackMethodName</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@getMetrics():com.netflix.hystrix.HystrixCommandMetrics" title="Permalink" target="_top">
+      <a href="../index.html#bz.HxCommand@getFallbackMethodName():String" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getProperties" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getProperties():com.netflix.hystrix.HystrixCommandProperties"></a>
-      <a id="getProperties():HystrixCommandProperties"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>HystrixCommand → AbstractCommand</dd></dl></div>
+    </li><li name="com.netflix.hystrix.HystrixCommand#getFallbackObservable" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getFallbackObservable():rx.Observable[R]"></a>
+      <a id="getFallbackObservable():Observable[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getFallbackObservable</span><span class="params">()</span><span class="result">: <span class="extype" name="rx.Observable">Observable</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.HxCommand@getFallbackObservable():rx.Observable[R]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>HystrixCommand → AbstractCommand</dd></dl></div>
+    </li><li name="com.netflix.hystrix.AbstractCommand#getFallbackSemaphore" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getFallbackSemaphore():com.netflix.hystrix.AbstractCommand.TryableSemaphore"></a>
+      <a id="getFallbackSemaphore():TryableSemaphore"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getProperties</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.HystrixCommandProperties">HystrixCommandProperties</span></span>
+        <span class="name">getFallbackSemaphore</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.AbstractCommand.TryableSemaphore">TryableSemaphore</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@getProperties():com.netflix.hystrix.HystrixCommandProperties" title="Permalink" target="_top">
+      <a href="../index.html#bz.HxCommand@getFallbackSemaphore():com.netflix.hystrix.AbstractCommand.TryableSemaphore" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
+    </li><li name="com.netflix.hystrix.AbstractCommand#getLogMessagePrefix" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLogMessagePrefix():String"></a>
+      <a id="getLogMessagePrefix():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLogMessagePrefix</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.HxCommand@getLogMessagePrefix():String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
     </li><li name="bz.HxCommand#getThr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getThr:Throwable"></a>
       <a id="getThr:Throwable"></a>
@@ -498,23 +515,23 @@ case of failure
 run() fn, or the appropriate HxThrowable when
 failure is caused by Hystrix intervention
 </p></div></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#getThreadPoolKey" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getThreadPoolKey():com.netflix.hystrix.HystrixThreadPoolKey"></a>
-      <a id="getThreadPoolKey():HystrixThreadPoolKey"></a>
+    </li><li name="com.netflix.hystrix.AbstractCommand#handleThreadEnd" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="handleThreadEnd():Unit"></a>
+      <a id="handleThreadEnd():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getThreadPoolKey</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.HystrixThreadPoolKey">HystrixThreadPoolKey</span></span>
+        <span class="name">handleThreadEnd</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@getThreadPoolKey():com.netflix.hystrix.HystrixThreadPoolKey" title="Permalink" target="_top">
+      <a href="../index.html#bz.HxCommand@handleThreadEnd():Unit" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -532,74 +549,6 @@ failure is caused by Hystrix intervention
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isCircuitBreakerOpen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isCircuitBreakerOpen():Boolean"></a>
-      <a id="isCircuitBreakerOpen():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isCircuitBreakerOpen</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isCircuitBreakerOpen():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isExecutedInThread" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isExecutedInThread():Boolean"></a>
-      <a id="isExecutedInThread():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isExecutedInThread</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isExecutedInThread():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isExecutionComplete" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isExecutionComplete():Boolean"></a>
-      <a id="isExecutionComplete():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isExecutionComplete</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isExecutionComplete():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isFailedExecution" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isFailedExecution():Boolean"></a>
-      <a id="isFailedExecution():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isFailedExecution</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isFailedExecution():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -617,108 +566,23 @@ failure is caused by Hystrix intervention
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isResponseFromCache" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isResponseFromCache():Boolean"></a>
-      <a id="isResponseFromCache():Boolean"></a>
+    </li><li name="com.netflix.hystrix.AbstractCommand#isRequestCachingEnabled" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isRequestCachingEnabled():Boolean"></a>
+      <a id="isRequestCachingEnabled():Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isResponseFromCache</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isRequestCachingEnabled</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isResponseFromCache():Boolean" title="Permalink" target="_top">
+      <a href="../index.html#bz.HxCommand@isRequestCachingEnabled():Boolean" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isResponseFromFallback" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isResponseFromFallback():Boolean"></a>
-      <a id="isResponseFromFallback():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isResponseFromFallback</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isResponseFromFallback():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isResponseRejected" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isResponseRejected():Boolean"></a>
-      <a id="isResponseRejected():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isResponseRejected</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isResponseRejected():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isResponseShortCircuited" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isResponseShortCircuited():Boolean"></a>
-      <a id="isResponseShortCircuited():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isResponseShortCircuited</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isResponseShortCircuited():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isResponseTimedOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isResponseTimedOut():Boolean"></a>
-      <a id="isResponseTimedOut():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isResponseTimedOut</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isResponseTimedOut():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
-    </li><li name="com.netflix.hystrix.HystrixCommand#isSuccessfulExecution" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isSuccessfulExecution():Boolean"></a>
-      <a id="isSuccessfulExecution():Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isSuccessfulExecution</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#bz.HxCommand@isSuccessfulExecution():Boolean" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -787,6 +651,57 @@ failure is caused by Hystrix intervention
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>HystrixCommand → HystrixExecutable</dd></dl></div>
+    </li><li name="com.netflix.hystrix.AbstractCommand#recordExecutedCommand" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordExecutedCommand():Unit"></a>
+      <a id="recordExecutedCommand():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recordExecutedCommand</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.HxCommand@recordExecutedCommand():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
+    </li><li name="com.netflix.hystrix.AbstractCommand#recordTotalExecutionTime" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordTotalExecutionTime(x$1:Long):Unit"></a>
+      <a id="recordTotalExecutionTime(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recordTotalExecutionTime</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.HxCommand@recordTotalExecutionTime(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
+    </li><li name="com.netflix.hystrix.AbstractCommand#shouldOutputOnNextEvents" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shouldOutputOnNextEvents():Boolean"></a>
+      <a id="shouldOutputOnNextEvents():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shouldOutputOnNextEvents</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#bz.HxCommand@shouldOutputOnNextEvents():Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../com$netflix$hystrix.html" class="extype" name="com.netflix.hystrix">com.netflix.hystrix</a>] </dd><dt>Definition Classes</dt><dd>AbstractCommand</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -903,6 +818,14 @@ failure is caused by Hystrix intervention
               <h3>Inherited from <span class="extype" name="com.netflix.hystrix.HystrixCommand">HystrixCommand</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</h3>
             </div><div class="parent" name="com.netflix.hystrix.HystrixExecutable">
               <h3>Inherited from <span class="extype" name="com.netflix.hystrix.HystrixExecutable">HystrixExecutable</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</h3>
+            </div><div class="parent" name="com.netflix.hystrix.AbstractCommand">
+              <h3>Inherited from <span class="extype" name="com.netflix.hystrix.AbstractCommand">AbstractCommand</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</h3>
+            </div><div class="parent" name="com.netflix.hystrix.HystrixObservable">
+              <h3>Inherited from <span class="extype" name="com.netflix.hystrix.HystrixObservable">HystrixObservable</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</h3>
+            </div><div class="parent" name="com.netflix.hystrix.HystrixInvokable">
+              <h3>Inherited from <span class="extype" name="com.netflix.hystrix.HystrixInvokable">HystrixInvokable</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</h3>
+            </div><div class="parent" name="com.netflix.hystrix.HystrixInvokableInfo">
+              <h3>Inherited from <span class="extype" name="com.netflix.hystrix.HystrixInvokableInfo">HystrixInvokableInfo</span>[<span class="extype" name="bz.HxCommand.A">A</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

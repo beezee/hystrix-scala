@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>hx - bz.syntax.hx</title>
-          <meta name="description" content="hx - bz.syntax.hx" />
-          <meta name="keywords" content="hx bz.syntax.hx" />
+          <title>CSetterLift - bz.syntax.hx.CSetterLift</title>
+          <meta name="description" content="CSetterLift - bz.syntax.hx.CSetterLift" />
+          <meta name="keywords" content="CSetterLift bz.syntax.hx.CSetterLift" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
-            var hash = 'bz.syntax.hx$';
+            var hash = 'bz.syntax.hx$$CSetterLift';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -26,14 +26,14 @@
    	  </script>
     
         </head>
-        <body class="value">
+        <body class="type">
       <div id="definition">
-        <img alt="Object" src="../../lib/object_big.png" />
-        <p id="owner"><a href="../package.html" class="extype" name="bz">bz</a>.<a href="package.html" class="extype" name="bz.syntax">syntax</a></p>
-        <h1>hx</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="bz.syntax">package syntax</a>
+        <img alt="Class" src="../../lib/class_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="bz">bz</a>.<a href="package.html" class="extype" name="bz.syntax">syntax</a>.<a href="hx$.html" class="extype" name="bz.syntax.hx">hx</a></p>
+        <h1>CSetterLift</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="hx$.html" class="extype" name="bz.syntax.hx">package hx</a>
           </div></span></h3><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -41,16 +41,15 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">hx</span>
+        <span class="name">CSetterLift</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implicit classes decorating functions and Setters
-with methods for execution inside of a HystrixCommand
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implicit class decorating a HystrixCommandProperties.Setter
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -71,7 +70,7 @@ with methods for execution inside of a HystrixCommand
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="bz.syntax.hx"><span>hx</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="bz.syntax.hx.CSetterLift"><span>CSetterLift</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -88,84 +87,29 @@ with methods for execution inside of a HystrixCommand
 
       <div id="template">
         <div id="allMembers">
-        
-
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="bz.syntax.hx.CSetterLift" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="CSetterLiftextendsAnyRef"></a>
-      <a id="CSetterLift:CSetterLift"></a>
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="bz.syntax.hx.CSetterLift#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(s:com.netflix.hystrix.HystrixCommandProperties.Setter):bz.syntax.hx.CSetterLift"></a>
+      <a id="&lt;init&gt;:CSetterLift"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <a href="hx$$CSetterLift.html"><span class="name">CSetterLift</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">CSetterLift</span><span class="params">(<span name="s">s: <span class="extype" name="com.netflix.hystrix.HystrixCommandProperties.Setter">Setter</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@CSetterLiftextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@&lt;init&gt;(s:com.netflix.hystrix.HystrixCommandProperties.Setter):bz.syntax.hx.CSetterLift" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Implicit class decorating a HystrixCommandProperties.Setter
-</p>
-    </li><li name="bz.syntax.hx.ControlLift" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ControlLiftextendsAnyRef"></a>
-      <a id="ControlLift:ControlLift"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="hx$$ControlLift.html"><span class="name">ControlLift</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@ControlLiftextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Implicit class decorating a HystrixCommand.Setter
-</p>
-    </li><li name="bz.syntax.hx.GKLift" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GKLift[A]extendsAnyRef"></a>
-      <a id="GKLift[A]:GKLift[A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="hx$$GKLift.html"><span class="name">GKLift</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@GKLift[A]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Implicit class decorating a HystrixCommand.Setter
-</p>
-    </li><li name="bz.syntax.hx.HxLift" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="HxLift[A]extendsAnyRef"></a>
-      <a id="HxLift[A]:HxLift[A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="hx$$HxLift.html"><span class="name">HxLift</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@HxLift[A]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Implicit class decorating functions of arity 0
-</p>
+      
     </li></ol>
             </div>
+
+        
 
         
 
@@ -183,7 +127,7 @@ with methods for execution inside of a HystrixCommand
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -200,7 +144,7 @@ with methods for execution inside of a HystrixCommand
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@##():Int" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@##():Int" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -217,7 +161,7 @@ with methods for execution inside of a HystrixCommand
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -234,7 +178,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -251,7 +195,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@clone():Object" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@clone():Object" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -274,7 +218,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -291,7 +235,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -308,7 +252,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@finalize():Unit" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -331,7 +275,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -348,7 +292,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@hashCode():Int" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -365,7 +309,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -382,7 +326,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -399,7 +343,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@notify():Unit" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@notify():Unit" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -416,7 +360,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -433,7 +377,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -450,11 +394,47 @@ with methods for execution inside of a HystrixCommand
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@toString():String" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@toString():String" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="bz.syntax.hx.CSetterLift#usingSemaphore" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="usingSemaphore():com.netflix.hystrix.HystrixCommandProperties.Setter"></a>
+      <a id="usingSemaphore():Setter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">usingSemaphore</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.HystrixCommandProperties.Setter">Setter</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@usingSemaphore():com.netflix.hystrix.HystrixCommandProperties.Setter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Use the Semaphore strategy for this Setter
+</p>
+    </li><li name="bz.syntax.hx.CSetterLift#usingThreads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="usingThreads():com.netflix.hystrix.HystrixCommandProperties.Setter"></a>
+      <a id="usingThreads():Setter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">usingThreads</span><span class="params">()</span><span class="result">: <span class="extype" name="com.netflix.hystrix.HystrixCommandProperties.Setter">Setter</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@usingThreads():com.netflix.hystrix.HystrixCommandProperties.Setter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Use the Thread strategy for this Setter
+</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -467,7 +447,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@wait():Unit" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@wait():Unit" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -490,7 +470,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -513,7 +493,7 @@ with methods for execution inside of a HystrixCommand
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#bz.syntax.hx$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../index.html#bz.syntax.hx$$CSetterLift@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
