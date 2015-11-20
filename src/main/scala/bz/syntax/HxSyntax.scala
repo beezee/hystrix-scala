@@ -5,6 +5,7 @@ import bz.HxControl._
 import bz.HxInterface
 import com.netflix.hystrix.HystrixCommand.Setter
 import com.netflix.hystrix.HystrixCommandProperties.{Setter => CSetter}
+import scala.language.higherKinds
 import scalaz.\/
 
 /**
@@ -37,7 +38,7 @@ object hx {
      * run method of r and getFallback method of fb
      * and execute
      */
-    def run[A](r: () => A, fb: () => A): A =
+    def run(r: () => A, fb: () => A): A =
       HX.instance(r, fb)(s)
 
     /**
