@@ -4,6 +4,19 @@ version := "1.0"
 
 scalaVersion := "2.11.7"
 
+scalacOptions ++= Seq(
+  "-deprecation",
+  "-encoding", "UTF-8", // yes, this is 2 args
+  "-feature",
+  "-unchecked",
+  "-Xfatal-warnings",
+  "-Xlint",
+  "-Yno-adapted-args",
+  // "-Ywarn-dead-code", // N.B. doesn't work well with the ??? hole
+  "-Ywarn-numeric-widen",
+  "-Ywarn-value-discard",
+  "-Xfuture")
+
 libraryDependencies ++= Seq(
   "com.netflix.hystrix" % "hystrix-core" % "1.4.20",
   "org.scalaz" %% "scalaz-core" % "7.1.5",

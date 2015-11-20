@@ -34,7 +34,7 @@ object HXTest extends Properties("HX") {
       (ms, g, c) =>
         val t = HX.command(g, c)
                   .config(_.withExecutionTimeoutInMilliseconds(1))
-        t.run[THD]{ () => Thread.sleep(ms) }
+        t.run[THD]{ () => Thread.sleep(ms.toLong) }
           .swap.map(_.getMessage).getOrElse("") == "hx-timed-out"
       }
 
