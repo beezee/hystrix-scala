@@ -94,6 +94,7 @@ object HxInterfaces {
    * \/ with Throwable on the left
    */
   type THD[A] = \/[Throwable, A]
+  type ThrowableOrA[A] = THD[A]
 
   /**
    * [[THD]] instance of HxInterface.
