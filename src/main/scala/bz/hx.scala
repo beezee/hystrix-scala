@@ -210,7 +210,7 @@ object HX {
 
 
   /**
-   * Creates a new HxCommand with the given fn and fn as
+   * Creates a new HxCommand with the given fn and fb as
    * run and getFallback functions, and the given
    * HystrixCommand.Setter s, and executes it
    */
